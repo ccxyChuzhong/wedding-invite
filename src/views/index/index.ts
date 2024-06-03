@@ -52,13 +52,13 @@ heartScale()
 // 监听时间
 const flowTimeListen = function(){
     const flow = [
-        new Date('2021-05-01 00:00:00').getTime(),
-        new Date('2021-05-01 08:00:00').getTime(),
-        new Date('2021-05-01 11:00:00').getTime(),
-        new Date('2021-05-01 12:00:00').getTime(),
-        new Date('2021-05-01 14:00:00').getTime(),
-        new Date('2021-05-01 16:00:00').getTime(),
-        new Date('2021-05-02 00:00:00').getTime(),
+        new Date('2024-05-01 00:00:00').getTime(),
+        new Date('2024-05-01 08:00:00').getTime(),
+        new Date('2024-05-01 11:00:00').getTime(),
+        new Date('2024-05-01 12:00:00').getTime(),
+        new Date('2024-05-01 14:00:00').getTime(),
+        new Date('2024-05-01 16:00:00').getTime(),
+        new Date('2024-05-02 00:00:00').getTime(),
     ]
     setInterval(()=>{
         const now = Date.now()
@@ -170,7 +170,7 @@ if(query.includes('share')){
 
 
 wx.ready(function () {      //需在用户可能点击分享按钮前就先调用
-    const title = '梁俊&韦晓霞婚礼邀请函'
+    const title = '程传耀&范光媛婚礼邀请函'
     const link = 'https://blinkjun.github.io/wedding-invite/'
     const imageUrl = 'https://blinkjun.github.io/wedding-invite/img/HRQ11517.jpg'
     const desc = '欢迎您来参加我们的婚礼'
@@ -202,28 +202,28 @@ document.querySelector('.address-jun').addEventListener('click',()=>{
     wx.openLocation({
         latitude: 23.330177, // 纬度，浮点数，范围为90 ~ -90
         longitude: 108.795106, // 经度，浮点数，范围为180 ~ -180。
-        name: '宾阳县新圩镇金恩药店', // 位置名
-        address: '宾阳县新圩镇金恩药店（邮政银行对面）', // 地址详情说明
+        name: '封丘县潘店镇程马牧村', // 位置名
+        address: '封丘县潘店镇程马牧村', // 地址详情说明
         scale: 15, // 地图缩放级别,整型值,范围从1~28。默认为最大
-        infoUrl: 'https://map.baidu.com/poi/%E6%96%B0%E5%9C%A9%E6%9D%8F%E6%9E%97%E6%98%A5%E8%8D%AF%E5%BA%97/@12111873.125,2655653,19z?uid=6c4c0c802a6691314e776edd&ugc_type=3&ugc_ver=1&device_ratio=1&compat=1&querytype=detailConInfo&da_src=shareurl' // 在查看位置界面底部显示的超链接,可点击跳转
+        infoUrl: 'https://map.baidu.com/search/%E7%A8%8B%E9%A9%AC%E7%89%A7%E6%9D%91/@12751198.105,4138785.19,21z?querytype=s&da_src=shareurl&wd=%E7%A8%8B%E9%A9%AC%E7%89%A7%E6%9D%91&c=261&src=0&wd2=%E6%96%B0%E4%B9%A1%E5%B8%82%E5%B0%81%E4%B8%98%E5%8E%BF&pn=0&sug=1&l=13&b=(12084281.125,2643869;12145465.125,2673437)&from=webmap&biz_forward=%7B%22scaler%22:1,%22styles%22:%22pl%22%7D&sug_forward=3c0a9217f6df19742806cef3&device_ratio=1' // 在查看位置界面底部显示的超链接,可点击跳转
     });
 })
 document.querySelector('.address-res').addEventListener('click',()=>{
     wx.openLocation({
         latitude: 23.215273, // 纬度，浮点数，范围为90 ~ -90
         longitude: 108.814324, // 经度，浮点数，范围为180 ~ -180。
-        name: '宾阳县蒙记食府', // 位置名
-        address: '南宁市宾阳县思远路与金和路交叉路口往西南约100米(祥和小区北侧)', // 地址详情说明
+        name: '封丘县潘店镇程马牧村', // 位置名
+        address: '封丘县潘店镇程马牧村', // 地址详情说明
         scale: 15, // 地图缩放级别,整型值,范围从1~28。默认为最大
-        infoUrl: 'https://map.baidu.com/poi/%E8%92%99%E8%AE%B0%E9%A3%9F%E5%BA%9C/@12114002.085,2641844.37,19z?uid=61e1a918549ab543a0acc479&ugc_type=3&ugc_ver=1&device_ratio=1&compat=1&querytype=detailConInfo&da_src=shareurl' // 在查看位置界面底部显示的超链接,可点击跳转
+        infoUrl: 'https://map.baidu.com/search/%E7%A8%8B%E9%A9%AC%E7%89%A7%E6%9D%91/@12751198.105,4138785.19,21z?querytype=s&da_src=shareurl&wd=%E7%A8%8B%E9%A9%AC%E7%89%A7%E6%9D%91&c=261&src=0&wd2=%E6%96%B0%E4%B9%A1%E5%B8%82%E5%B0%81%E4%B8%98%E5%8E%BF&pn=0&sug=1&l=13&b=(12084281.125,2643869;12145465.125,2673437)&from=webmap&biz_forward=%7B%22scaler%22:1,%22styles%22:%22pl%22%7D&sug_forward=3c0a9217f6df19742806cef3&device_ratio=1' // 在查看位置界面底部显示的超链接,可点击跳转
     });
 })
 document.querySelector('.address-sunrise').addEventListener('click',()=>{
     wx.openLocation({
         latitude: 23.25911, // 纬度，浮点数，范围为90 ~ -90
         longitude: 108.820465, // 经度，浮点数，范围为180 ~ -180。
-        name: '宾阳县北街', // 位置名
-        address: '（勒马红绿灯西环路益霖彩砖厂路口进去200米）', // 地址详情说明
+        name: '封丘县潘店镇程马牧村', // 位置名
+        address: '封丘县潘店镇程马牧村）', // 地址详情说明
         scale: 15, // 地图缩放级别,整型值,范围从1~28。默认为最大
         infoUrl: 'http://weixin.qq.com' // 在查看位置界面底部显示的超链接,可点击跳转
     });
